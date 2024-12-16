@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://search.naver.com/search.naver?ssc=tab.image.all&where=image&sm=tab_jum&query=%EB%89%B4%EC%A7%84%EC%8A%A4#imgId=image_sas%3Anews_a362d2f8f2158af6b158e3ad47150c56" alt="뉴진스">
+    <!-- 대체텍스트가 중복인 경우 alt값 비워두기 -->
+    <p>뉴진스 사진</p>
+    <img src="https://search.naver.com/search.naver?ssc=tab.image.all&where=image&sm=tab_jum&query=%EB%89%B4%EC%A7%84%EC%8A%A4#imgId=image_sas%3Anews_a362d2f8f2158af6b158e3ad47150c56" alt="">
+
+    <!-- alt값 생략 시 스크린리더는 경로를 읽습니다 -->
+    <img src="https://search.naver.com/search.naver?ssc=tab.image.all&where=image&sm=tab_jum&query=%EB%89%B4%EC%A7%84%EC%8A%A4#imgId=image_sas%3Anews_a362d2f8f2158af6b158e3ad47150c56" />
+
+    <!-- 상대경로 -->
+    <!-- ./: 현재 폴더
+     ../: 상위 폴더
+     ./폴더명/: 하위 폴더-->
+    <!-- 동일선상 -->
+    <img src="./zeezee.png" alt="사막여우 지지">
+    <!-- 하위 -->
+    <img src="./img/zeezee.png" alt="사막여우 지지">
+    <!-- 상위 -->
+    <img src="../zeezee.png" alt="사막여우 지지">
+
+
+</body>
+</html>
