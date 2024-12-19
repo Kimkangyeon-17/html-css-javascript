@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: white;
+      }
+
+      .container{
+        grid-column: 100px 100px 100px;
+        color: coral;
+        grid-template-rows: 200px 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>header</header>
+      <div class="main">
+        <section>section > article</section>
+        <aside>aside</aside>
+      </div>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

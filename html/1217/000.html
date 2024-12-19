@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Overlay Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* 기본 스타일 설정 */
+        html {
+            font-family: "Black And White Picture", system-ui;
+            font-weight: 600;
+            font-style: normal;
+            text-align: center;
+        }
+
+        /* 이미지 컨테이너 설정 */
+        .img-container {
+            position: relative; /* 자식 요소를 절대 위치로 설정하기 위해 */
+            display: inline-block; /* 요소 크기를 이미지에 맞게 */
+        }
+
+        /* 이미지 스타일 */
+        .img-container img {
+            display: block;
+            width: 100%; /* 이미지의 가로 크기 */
+            height: auto; /* 세로 비율 유지 */
+        }
+
+        /* 이미지 위의 텍스트 스타일 */
+        .text-overlay {
+            position: absolute;
+            top: 10%; /* 상단에서 10% */
+            left: 50%; /* 왼쪽에서 50% */
+            transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+            color: white; /* 글자색 */
+            font-size: 35px; /* 글자 크기 */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 글자가 잘 보이도록 그림자 효과 */
+            white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+        }
+
+        .text-overlay2 {
+
+            font-family: "Playwrite DE VA Guides", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+            
+            position: absolute;
+            top: 7%;
+            left: 50%; /* 왼쪽에서 50% */
+            transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+            color: white; /* 글자색 */
+            font-size: 35px; /* 글자 크기 */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 글자가 잘 보이도록 그림자 효과 */
+            white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+        }
+
+
+        .text-overlay3{
+
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+
+            position: absolute;
+            top: 20%; /* 상단에서 10% */
+            left: 50%; /* 왼쪽에서 50% */
+            transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+            color: white; /* 글자색 */
+            font-size: 20px; /* 글자 크기 */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 글자가 잘 보이도록 그림자 효과 */
+            white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+        }
+
+        .text-overlay4{
+            position: absolute;
+            top: 25%; /* 상단에서 20% */
+            left: 70%; /* 왼쪽에서 70% */
+            transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+            color: white; /* 글자색 */
+            font-size: 20px; /* 글자 크기 */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 글자가 잘 보이도록 그림자 효과 */
+            white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <!-- 이미지 삽입 -->
+        <img src="image.png" alt="이미지">
+        <!-- 이미지 위에 표시될 텍스트 -->
+        <p class="text-overlay">끝날 때까지 끝난 게 아니다.</p>
+        
+        <p2 class="text-overlay2"> Kangyeon's slogan</p2>
+
+        <P3 class="text-overlay3">(It ain't over till it's over)</P3>
+
+        <p4 class="text-overlay4"> -요기 베라- </p4>
+    </div>
+</body>
+</html>
