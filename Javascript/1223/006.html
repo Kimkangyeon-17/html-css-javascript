@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 변수이름은 문자, 숫자, 특수문자(_, $)
+        let name123$_;
+        // let name123>_; syntax error 발생
+
+        // 2. 변수이름은 숫자로 시작할 수는 없다.
+        let name12;
+        // let 12name; syntax error 발생
+
+        // 3. 예약어는 사용할 수 없다.
+        // const var; syntax error 발생
+        // const if; syntax error 발생
+
+        // 4. 대소문자를 구분한다.
+        // let name, Name, NAME;
+        name = "name"
+        Name = "Name"
+        NAME = "NAME"
+        console.log(name, Name, NAME);
+
+        // 권장하지 않습니다.
+        const VAR = "VAR";
+        console.log(VAR)
+
+        // 관습, 코딩 컨벤션
+        // 1. 
+
+        //2. 비공개 속성이나 함수 내부의 변수 --> 언더스코어로 시작
+        let _private;
+
+        // 3. 클래스 이름은 파스칼 케이스를 사용
+        class userinfo{};
+    </script>
+</body>
+</html>
