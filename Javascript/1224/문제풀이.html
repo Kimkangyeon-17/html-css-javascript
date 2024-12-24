@@ -110,6 +110,7 @@
         },
         ];
 
+        // 풀이 1
         let total = 0;
 
         for (let i = 0; i < l.length; i++) {
@@ -117,6 +118,19 @@
         }
         console.log(total / l.length);        
 
+        //풀이 2
+        let total2 = 0
+        l.forEach((item)=>{
+            total2 += Number(item.age);
+        });
+        console.log(total2 / l.length)
+
+        // 풀이 3
+        const result = l.reduce((total2, item)=>{
+            return total2 += Number(item.age)
+        }, 0)/l.length;
+        console.log(result)
+        
     </script>
 </body>
 </html>
