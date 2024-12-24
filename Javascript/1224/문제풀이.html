@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1번
+        let x = 5;
+        let y = '7';
+        console.log(x + y); // 57
+
+        // 2번
+        let a = 10;
+        let b = 3;
+        console.log(a % b); // 1
+
+        // 3번
+        let fruits = ['apple', 'banana', 'orange'];
+        console.log(fruits[1]); // banana
+
+        //4번
+        function multiply(a, b) {
+        return a * b;
+        }
+        console.log(multiply(3, 4)); // 12
+
+        // 5번
+        let numbers = [1, 2, 3, 4, 5];
+        let sum = 0;
+        
+        for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            sum += numbers[i];
+        }
+        }
+        
+        console.log(sum); //6
+
+        //6번
+        let person = {
+        name: 'John',
+        age: 30,
+        city: 'New York',
+        };
+        
+        for (let key in person) {
+        console.log(key + ': ' + person[key]);
+        }
+
+        
+
+    </script>
+</body>
+</html>

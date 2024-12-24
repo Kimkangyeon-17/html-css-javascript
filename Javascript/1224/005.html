@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1, 2, 3];
+        // arr[0] = 100
+        // console.log(arr);
+
+        // let str = 'hello';
+        // str[0] = 'H';
+        // console.log(str);
+
+        const arr1 = [];
+        const arr2 = [1, 2, 3];
+        const arr3 = new Array(4, 5, 6);
+        const arr4 = new Array(3);
+        console.log(arr1)
+        console.log(arr2)
+        console.log(arr3)
+        console.log(arr4)
+
+        const arr5 = [10, 20, 30];
+        // 배열 안의 원소에 접근하기 위해서는 인덱스 번호를 이용합니다.
+        console.log(arr5[0]); // 10
+        console.log(arr5[1]); // 20
+        console.log(arr5[2]); // 30
+        console.log(arr5[3]); // ??
+
+        
+        // 1차원 배열
+        const arr6= [10, 20, 30, 40, 50];
+        console.log(arr6.length); // 5
+
+        // 2차원 배열
+        const arr7 = [
+        [1, 2],
+        [3, 4],
+        [5, 6],
+        ];
+        console.log(arr7[0][0]);
+        console.log(arr7[2][1]);
+
+        // 3차원 배열
+        const arr8 = [
+        [
+            [1, 2],
+            [3, 4],
+        ],
+        [
+            [5, 6],
+            [7, 8],
+        ],
+        ];
+        console.log(arr8[0][1][0]);
+        console.log(arr8[1][0][1]);
+
+        // push()는 배열 끝에 요소 추가, 길이 반환
+        const arr9 = [1, 2, 3];
+        arr9.push(4);
+        console.log(arr9); // [1, 2, 3, 4]
+        // pop()은 배열으리 마지막 요소 꺼내어 반환
+        arr9.pop();
+        console.log(arr9); // [1, 2, 3]
+
+        const arr10 = [1, 2, 3];
+        const last = arr10.pop();
+        console.log(last); // 3
+
+        // shift()는 배열의 첫번째 요소 꺼내어 반환
+        const arr11 = ['사과', '바나나', '수박'];
+        arr11.shift();
+        console.log(arr11);
+        //unshift는 배열의 첫번째 요소로 새로운 요소 추가
+        arr11.unshift('오이', '배');
+        console.log(arr11);
+
+        // slice(시작인덱스, 끝낼 인덱스) 배열에서 요소들을 추출하여 새로운 배열로 반환
+        const arr12 = ['apple', 'banana', 'cherry', 'durian', 'elderberry'];
+        console.log(arr12.slice(1, 4)); // 2번째부터 4번째 요소까지 추출
+        console.log(arr12.slice(2)); // 3번째 요소부터 끝까지 추출
+        console.log(arr12.slice()); // 배열 전체를 추출
+        console.log(arr12.slice(0, 10)); // 배열 전체를 추출
+        
+        // sort() 배열의 요소 정렬
+        const avengers = ['아이언맨', '스파이더맨', '헐크', '토르'];
+        console.log(avengers.sort());
+
+        const nums = [3, 1, 8, 6];
+        console.log(nums.sort());
+
+        const nums2 = [23, 5, 1000, 42];
+        console.log(nums2.sort());
+
+        let numbers = [4, 2, 5, 1, 3];
+        numbers.sort((a, b) => a - b);
+        console.log(numbers);
+
+        // forEach() 각 소에 대해 주어진 함수를 실행
+        const 배열 = ['a', 'b', 'c'];
+        // 배열.forEach("요소마다_실행시킬_함수");
+        
+        const arr13 = ['참외', '키위', '감귤'];
+        function 함수(요소, 인덱스) {
+        console.log(요소, 인덱스);
+        }
+        arr.forEach(함수);
+
+        const arr14 = ['참외', '키위', '감귤'];
+        arr.forEach(function (item, index) {
+        console.log(item, index);
+        });
+
+        const arr15 = ['참외', '키위', '감귤'];
+        arr.forEach((item, index) => {
+        console.log(item, index);
+        });
+
+        const avengers2 = ['spiderman', 'ironman', 'hulk', 'thor'];
+
+        const newAvengers = [];
+        avengers2.forEach(item => {
+        newAvengers.push('💖' + item + '💖');
+        });
+        console.log(avengers2);
+
+        // map() 각 요소에 대해 주어진 함수를 실행, 결과를 새로운 배열로 반환
+        const arr16 = [1, 2, 3];
+        const newArr = arr16.map(function (item, index) {
+        return item * index;
+        });
+
+        console.log(newArr);
+
+        const data = [
+            {
+                _id: '642ba3980785cecff3f39a8d',
+                index: 0,
+                age: 28,
+                eyeColor: 'green',
+                name: 'Annette Middleton',
+                gender: 'female',
+                company: 'KINETICA',
+            },
+            {
+                _id: '642ba398d0fed6e17f2f50c9',
+                index: 1,
+                age: 37,
+                eyeColor: 'green',
+                name: 'Kidd Roman',
+                gender: 'male',
+                company: 'AUSTECH',
+            },
+            {
+                _id: '642ba39827d809511d00dd8d',
+                index: 2,
+                age: 39,
+                eyeColor: 'brown',
+                name: 'Best Ratliff',
+                gender: 'male',
+                company: 'PRISMATIC',
+            },
+            ];
+
+            // const ages = data.map(item => item.age);
+            const ages = data.map((item) => item['age']);
+            console.log(ages);
+
+            const arr17 = ['hello', 'world', 'hojun'];
+
+
+        // includes() 특정요소가 포함되어 있는지 확인, 포함되어 있으면  True, 아니면 False
+        console.log(arr17.includes('world')); // true - 'world'가 배열에 포함됨
+
+        const arr18 = ['hello', 'world', 'hojun'];
+        console.log(arr2.includes('leehojun')); // false - 'leehojun'이 배열에 포함되지 않음
+
+        const arr19 = ['hello', 'world', 'hojun'];
+        console.log(arr3.includes('jun')); // false - 'jun'이 배열에 포함되지 않음
+
+        const arr20 = ['hello', 'world', 'hojun'];
+
+
+        // join() 모든 요소를 연결하여 하나의 문자열로 만듬
+        console.log(arr17.join('!')); // "hello!world!hojun"
+
+        const arr21 = ['010', '1034', '1100'];
+        console.log(arr21.join('-')); // "010-1034-1100"
+
+        const arr22 = ['apple', 'banana', 'cherry'];
+        console.log(arr22.join()); // "apple,banana,cherry" - 기본 구분자인 쉼표(,)로 연결
+    </script>
+</body>
+</html>
