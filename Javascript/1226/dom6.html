@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World!</p>
+    <button>Change Style</button>
+     
+    <script>
+      const myP = document.querySelector('p');
+      const myBtn = document.querySelector('button');
+     
+      myBtn.addEventListener('click', function () {
+        myP.style.color = 'red'; // 현재 스타일 정보를 변경합니다.
+        myP.style.fontWeight = 'bold'; // 현재 스타일 정보에 font-weight 속성이 없다면 추가합니다.
+      });
+     
+      // 현재 스타일 정보를 가져옵니다.
+      // const txtColor = myP.style.color;
+      // console.log(txtColor); // 빈 문자열 (초기 상태에서는 스타일이 직접 설정되지 않았기 때문)
+     
+      // 현재 스타일 정보를 제거(초기화)합니다.
+      // myP.style.color = null;
+    </script>
+</body>
+</html>
